@@ -19,12 +19,12 @@ function App() {
   const generateLottoNumbers = () => {
     const numbers: number[] = [];
     while (numbers.length < 7) {
-      const randomNumber = Math.floor(Math.random() * 50) + 1; // 1～50の数字
+      const randomNumber = Math.floor(Math.random() * 50) + 1; 
       if (!numbers.includes(randomNumber)) {
         numbers.push(randomNumber);
       }
     }
-    setLottoNumbers(numbers); // 状態を更新
+    setLottoNumbers(numbers); 
   };
 
   return (
